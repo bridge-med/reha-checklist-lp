@@ -28,7 +28,8 @@ export const config = {
      * 差し替える場合は viewform までを必須に、ouid 等の個人パラメタは外す。
      */
     formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScYUgG_gRt3Y3slGhFD7R2HeJ9pBl1umptI4sk4h1AWOEmgJw/viewform',
-    primaryLabel: '無料でチェックリストを受け取る',
+    primaryLabel: '無料チェックリストを受け取る',
+    secondaryLabel: 'PDF・スプレッドシートを無料で受け取る',
     headerLabel: '無料で受け取る',
   },
 } as const;

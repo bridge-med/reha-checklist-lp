@@ -7,11 +7,19 @@ const fadeUp = {
   visible: { opacity: 1, y: 0 },
 };
 
+const personas = [
+  '整形外科クリニック院長',
+  '事務長',
+  'リハ責任者',
+  'PT リーダー',
+  '外来リハ導入を検討中',
+];
+
 export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden pt-32 pb-24 md:pt-40 md:pb-32 px-6 sm:px-8"
+      className="relative overflow-hidden pt-28 pb-20 md:pt-40 md:pb-32 px-5 sm:px-8"
     >
       {/* 背景の柔らかいグラデ */}
       <div
@@ -59,7 +67,7 @@ export default function Hero() {
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.5 }}
-            className="eyebrow mb-6"
+            className="eyebrow mb-5"
           >
             無料配布 · リハ運営者向け
           </motion.div>
@@ -67,34 +75,61 @@ export default function Hero() {
           <motion.h1
             variants={fadeUp}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-5xl font-bold leading-tight tracking-tight text-ink"
+            className="text-[28px] sm:text-3xl md:text-5xl font-bold leading-tight tracking-tight text-ink"
           >
             リハ部門の数字、
             <br />
             <span className="text-med-600">"売上"だけ</span>見ていませんか？
           </motion.h1>
 
+          {/* 痛みを示す一文 */}
           <motion.p
             variants={fadeUp}
             transition={{ duration: 0.5 }}
-            className="mt-7 text-base md:text-lg leading-relaxed text-ink-soft max-w-2xl"
+            className="mt-5 text-[15px] md:text-base leading-relaxed text-ink-soft max-w-2xl"
+          >
+            忙しい毎日の中で、リハ部門の改善ポイントが見えづらい。
+            <br className="hidden sm:block" />
+            その原因は売上ではなく、
+            <span className="font-semibold text-ink">「患者の流れ」と「枠の使われ方」</span>
+            を見ていないことかもしれません。
+          </motion.p>
+
+          {/* 対象者 chip */}
+          <motion.div
+            variants={fadeUp}
+            transition={{ duration: 0.5 }}
+            className="mt-7 flex flex-wrap gap-1.5"
+          >
+            {personas.map((p) => (
+              <span
+                key={p}
+                className="inline-flex items-center rounded-full border border-med-200 bg-med-50 px-2.5 py-1 text-[11px] sm:text-xs font-medium text-med-700"
+              >
+                {p}
+              </span>
+            ))}
+          </motion.div>
+
+          <motion.p
+            variants={fadeUp}
+            transition={{ duration: 0.5 }}
+            className="mt-7 text-sm md:text-base leading-relaxed text-ink-soft max-w-2xl"
           >
             外来リハの運営改善に必要な KPI を、現場目線で整理できる無料チェックリスト。
-            <br className="hidden md:block" />
-            整形外科クリニックの院長・事務長・リハ責任者・PT リーダー向けに、
             「最初に見るべき数字」を1枚にまとめました。
           </motion.p>
 
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.5 }}
-            className="mt-10 flex flex-wrap items-center gap-4"
+            className="mt-9 flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3 sm:gap-4"
           >
-            <a href={config.cta.formUrl} className="btn-primary">
+            <a href={config.cta.formUrl} className="btn-primary justify-center sm:justify-start">
               {config.cta.primaryLabel}
               <ArrowRight size={16} strokeWidth={2.4} />
             </a>
-            <span className="text-sm text-ink-mute">
+            <span className="text-xs sm:text-sm text-ink-mute">
               {config.product.teaser}
             </span>
           </motion.div>
@@ -102,14 +137,14 @@ export default function Hero() {
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.5 }}
-            className="mt-12 flex flex-wrap gap-6 text-sm text-ink-mute"
+            className="mt-10 flex flex-wrap gap-x-5 gap-y-2 text-xs sm:text-sm text-ink-mute"
           >
             <span className="inline-flex items-center gap-2">
-              <FileText size={16} className="text-med-500" strokeWidth={2} />
+              <FileText size={15} className="text-med-500" strokeWidth={2} />
               PDF 解説資料
             </span>
             <span className="inline-flex items-center gap-2">
-              <Table2 size={16} className="text-teal-500" strokeWidth={2} />
+              <Table2 size={15} className="text-teal-500" strokeWidth={2} />
               Google スプレッドシート雛形
             </span>
           </motion.div>

@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import ProblemSection from './components/ProblemSection';
 import ConceptSection from './components/ConceptSection';
 import ContentsSection from './components/ContentsSection';
+import Preview from './components/Preview';
 import KpiExamples from './components/KpiExamples';
 import HowToUse from './components/HowToUse';
 import Profile from './components/Profile';
@@ -18,6 +19,7 @@ function App() {
         <ProblemSection />
         <ConceptSection />
         <ContentsSection />
+        <Preview />
         <KpiExamples />
         <HowToUse />
         <Profile />

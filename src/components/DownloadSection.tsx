@@ -36,26 +36,26 @@ export default function DownloadSection() {
           <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-teal-200 mb-5">
             Download
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold tracking-tight leading-snug">
+          <h2 className="text-[22px] sm:text-2xl md:text-4xl font-bold tracking-tight leading-snug">
             まずは、リハ部門の数字を
             <br />
             <span className="text-teal-200">"見える化"する</span>
             ところから始めてみませんか？
           </h2>
-          <p className="mt-6 text-base md:text-lg leading-relaxed text-med-100">
+          <p className="mt-5 text-sm sm:text-base md:text-lg leading-relaxed text-med-100">
             PDF とスプレッドシート雛形を、お手元のメールにお送りします。
             自院に合わせて調整して、まず1週間だけ試してみてください。
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <div className="mt-9 flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3 sm:gap-4">
             <a
               href={config.cta.formUrl}
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-semibold text-med-700 shadow-soft transition-all hover:-translate-y-0.5"
             >
-              {config.cta.primaryLabel}
+              {config.cta.secondaryLabel}
               <ArrowRight size={16} strokeWidth={2.4} />
             </a>
-            <span className="text-sm text-med-100">
+            <span className="text-xs sm:text-sm text-med-100">
               所要時間 1 分（メールアドレスのみ）
             </span>
           </div>

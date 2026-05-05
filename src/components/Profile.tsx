@@ -14,7 +14,7 @@ export default function Profile() {
       {/* 右上に rings 装飾 */}
       <div
         aria-hidden
-        className="pointer-events-none absolute top-0 right-0 w-[420px] max-w-[40%] opacity-30"
+        className="pointer-events-none absolute top-0 right-0 w-[420px] max-w-[40%] opacity-30 hidden md:block"
       >
         <img src="decoration/rings.jpg" alt="" className="w-full h-auto" />
       </div>
@@ -40,9 +40,9 @@ export default function Profile() {
             </span>
           </div>
           <p className="mt-7 text-base md:text-lg leading-loose text-ink-soft">
-            現場で患者を診て、大学院で評価の客観性と向き合い、事業会社で医療経営の数字に責任を持ち、いまはリハ部門の KPI 管理や AI / スプレッドシートを使った業務改善に取り組んでいます。
+            理学療法士として臨床現場を経験し、大学院で評価の客観性と向き合い、いまは事業会社で医療経営の支援に関わっています。外来リハの導入支援、リハ部門の KPI 管理、予約・実績管理のダッシュボード設計、AI / スプレッドシートを使った業務改善が日々の仕事です。
             <span className="font-semibold text-ink">「臨床 × 研究 × 経営」</span>
-            を一人で繋ぐことが、本書の出発点です。
+            を一人で繋ぐ立場が、本書の出発点になっています。
           </p>
           <p className="mt-5 text-sm md:text-base leading-relaxed text-ink-mute">
             「現場の努力が足りない」ではなく「見るべき数字が整理されていないだけ」という前提で、現場が嫌がらない形の数字運用を作ることを大切にしています。

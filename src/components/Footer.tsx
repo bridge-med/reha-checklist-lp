@@ -57,7 +57,10 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-ink-line text-xs text-ink-mute">
+        <div className="mt-10 pt-6 border-t border-ink-line text-xs text-ink-soft leading-relaxed max-w-2xl">
+          リハ部門の数字整理・KPI ダッシュボード設計・AI / スプレッドシートを使った業務改善などについて、個別相談も準備中です。気になる方は note や X でお声がけください。
+        </div>
+        <div className="mt-4 text-xs text-ink-mute">
           © 2026 {config.brand.name}｜{config.brand.tagline}. 配布物の内容のコピーや再配布はお控えください。
         </div>
       </div>
