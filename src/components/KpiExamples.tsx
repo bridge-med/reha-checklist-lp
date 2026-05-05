@@ -23,8 +23,19 @@ const kpis = [
 
 export default function KpiExamples() {
   return (
-    <section className="section bg-paper-off">
-      <div className="section-inner">
+    <section className="section bg-paper-off relative overflow-hidden">
+      {/* network 装飾を上端に薄く */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-2 left-0 right-0 opacity-25"
+      >
+        <img
+          src="decoration/network.jpg"
+          alt=""
+          className="w-full h-auto"
+        />
+      </div>
+      <div className="section-inner relative">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}

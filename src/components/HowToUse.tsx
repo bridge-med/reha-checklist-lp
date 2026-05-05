@@ -5,16 +5,19 @@ const steps = [
     n: '01',
     title: '現状をチェックする',
     desc: 'KPI チェックリストで「自院で見えている数字」を 3 段階で確認。優先度の高い領域が浮かびます。',
+    img: 'illustrations/steps/step-1-check.jpg',
   },
   {
     n: '02',
     title: '1 週間だけ数字を入力する',
     desc: 'Google スプレッドシート雛形に毎日 5 分で入力。週末に自動集計された週次サマリーで動きを見ます。',
+    img: 'illustrations/steps/step-2-input.jpg',
   },
   {
     n: '03',
     title: '優先課題を決める',
     desc: '見えてきた課題から、最初の一手を 1 つだけ決める。アクションリストで担当・期限まで落とします。',
+    img: 'illustrations/steps/step-3-prioritize.jpg',
   },
 ];
 
@@ -53,13 +56,23 @@ export default function HowToUse() {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.5 }}
-              className="rounded-card bg-paper-off border border-ink-line p-7 relative"
+              className="rounded-card bg-paper-off border border-ink-line overflow-hidden relative"
             >
-              <div className="font-en text-3xl font-bold text-med-500 mb-3">
-                {s.n}
+              <div className="aspect-[4/3] bg-paper overflow-hidden border-b border-ink-line">
+                <img
+                  src={s.img}
+                  alt=""
+                  className="w-full h-full object-contain p-3"
+                  loading="lazy"
+                />
               </div>
-              <h3 className="font-bold text-ink text-lg mb-2">{s.title}</h3>
-              <p className="text-sm leading-relaxed text-ink-soft">{s.desc}</p>
+              <div className="p-7">
+                <div className="font-en text-3xl font-bold text-med-500 mb-3">
+                  {s.n}
+                </div>
+                <h3 className="font-bold text-ink text-lg mb-2">{s.title}</h3>
+                <p className="text-sm leading-relaxed text-ink-soft">{s.desc}</p>
+              </div>
             </motion.li>
           ))}
         </motion.ol>

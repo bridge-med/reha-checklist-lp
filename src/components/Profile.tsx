@@ -10,8 +10,15 @@ const stages = [
 
 export default function Profile() {
   return (
-    <section className="section bg-paper-sand">
-      <div className="section-inner">
+    <section className="section bg-paper-sand relative overflow-hidden">
+      {/* 右上に rings 装飾 */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute top-0 right-0 w-[420px] max-w-[40%] opacity-30"
+      >
+        <img src="decoration/rings.jpg" alt="" className="w-full h-auto" />
+      </div>
+      <div className="section-inner relative">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}

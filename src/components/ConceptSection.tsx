@@ -34,24 +34,44 @@ export default function ConceptSection() {
           <p className="mt-6 text-base md:text-lg leading-loose text-ink-soft">
             患者の流れと枠の使われ方を整理することで、改善すべきポイントが見えやすくなります。
           </p>
-          <div className="mt-8 grid grid-cols-2 gap-4">
-            <div className="rounded-card bg-paper border border-ink-line p-5">
-              <div className="text-xs font-semibold uppercase tracking-[0.16em] text-med-600 mb-2">
-                Flow
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="rounded-card bg-paper border border-ink-line overflow-hidden">
+              <div className="aspect-[4/3] bg-paper-off overflow-hidden">
+                <img
+                  src="illustrations/concept/flow.jpg"
+                  alt="患者の流れ:新患→処方→初回→継続→終了"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
-              <div className="font-bold text-ink">患者の流れ</div>
-              <p className="mt-2 text-sm text-ink-mute leading-relaxed">
-                新患 → 処方 → 初回 → 継続 → 終了。どこで切れているかを追う
-              </p>
+              <div className="p-5">
+                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-med-600 mb-2">
+                  Flow
+                </div>
+                <div className="font-bold text-ink">患者の流れ</div>
+                <p className="mt-2 text-sm text-ink-mute leading-relaxed">
+                  新患 → 処方 → 初回 → 継続 → 終了。どこで切れているかを追う
+                </p>
+              </div>
             </div>
-            <div className="rounded-card bg-paper border border-ink-line p-5">
-              <div className="text-xs font-semibold uppercase tracking-[0.16em] text-teal-500 mb-2">
-                Capacity
+            <div className="rounded-card bg-paper border border-ink-line overflow-hidden">
+              <div className="aspect-[4/3] bg-paper-off overflow-hidden">
+                <img
+                  src="illustrations/concept/capacity.jpg"
+                  alt="枠の使われ方:総枠 / 実施数 / 空き / キャンセル / 埋め戻し"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
               </div>
-              <div className="font-bold text-ink">枠の使われ方</div>
-              <p className="mt-2 text-sm text-ink-mute leading-relaxed">
-                総枠 / 実施数 / 空き / キャンセル / 埋め戻し で見る
-              </p>
+              <div className="p-5">
+                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-teal-500 mb-2">
+                  Capacity
+                </div>
+                <div className="font-bold text-ink">枠の使われ方</div>
+                <p className="mt-2 text-sm text-ink-mute leading-relaxed">
+                  総枠 / 実施数 / 空き / キャンセル / 埋め戻し で見る
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>

@@ -17,8 +17,18 @@ const cardVariants = {
 
 export default function ProblemSection() {
   return (
-    <section className="section bg-paper">
-      <div className="section-inner">
+    <section className="section bg-paper relative overflow-hidden">
+      {/* 薄いグリッド背景 */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: 'url(patterns/grid.jpg)',
+          backgroundSize: '480px',
+          backgroundRepeat: 'repeat',
+        }}
+      />
+      <div className="section-inner relative">
         <motion.div
           initial="hidden"
           whileInView="visible"

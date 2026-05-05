@@ -13,6 +13,18 @@ export default function DownloadSection() {
             'radial-gradient(50% 60% at 70% 0%, rgba(82,178,178,0.18) 0%, transparent 70%)',
         }}
       />
+      {/* 上端の流線装飾 (mix-blend で med-700 の上にうっすら) */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute top-0 left-0 right-0 h-40 opacity-20"
+        style={{
+          backgroundImage: 'url(patterns/curves.jpg)',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'top center',
+          mixBlendMode: 'screen',
+        }}
+      />
       <div className="section-inner relative">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -58,7 +70,7 @@ export default function DownloadSection() {
                 チェックリスト本編
               </div>
               <div className="text-sm text-med-100 mt-1">
-                A4 / 12〜15 ページ
+                A4 PDF / 解説と書き込み欄
               </div>
             </div>
             <div className="rounded-card border border-white/15 bg-white/5 backdrop-blur p-5">

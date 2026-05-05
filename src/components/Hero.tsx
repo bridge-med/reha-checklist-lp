@@ -16,13 +16,40 @@ export default function Hero() {
       {/* 背景の柔らかいグラデ */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10"
+        className="pointer-events-none absolute inset-0 -z-20"
         style={{
           background:
             'radial-gradient(60% 50% at 30% 0%, rgba(43,108,176,0.08) 0%, transparent 70%), radial-gradient(50% 40% at 80% 30%, rgba(82,178,178,0.07) 0%, transparent 70%)',
         }}
       />
-      <div className="mx-auto max-w-site">
+      {/* dots パターンを薄く敷く */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-20 opacity-40"
+        style={{
+          backgroundImage: 'url(patterns/dots.jpg)',
+          backgroundSize: '320px',
+          backgroundRepeat: 'repeat',
+        }}
+      />
+      {/* 右側に Hero イラスト（PCで画面外にはみ出ないよう調整） */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 -z-10 hidden md:block w-[58%] max-w-[820px] opacity-60"
+      >
+        <img
+          src="illustrations/hero/hero-laptop.jpg"
+          alt=""
+          className="w-full h-auto"
+          style={{
+            maskImage:
+              'linear-gradient(to right, transparent 0%, black 35%, black 100%)',
+            WebkitMaskImage:
+              'linear-gradient(to right, transparent 0%, black 35%, black 100%)',
+          }}
+        />
+      </div>
+      <div className="mx-auto max-w-site relative">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -79,7 +106,7 @@ export default function Hero() {
           >
             <span className="inline-flex items-center gap-2">
               <FileText size={16} className="text-med-500" strokeWidth={2} />
-              PDF 12〜15 ページ
+              PDF 解説資料
             </span>
             <span className="inline-flex items-center gap-2">
               <Table2 size={16} className="text-teal-500" strokeWidth={2} />
