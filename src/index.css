@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    font-feature-settings: "palt" 1;
+  }
+  ::selection {
+    background-color: theme('colors.med.500');
+    color: white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-med-500 px-7 py-3.5 text-sm font-semibold text-white shadow-soft transition-all hover:bg-med-600 hover:-translate-y-0.5;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink-line bg-paper px-6 py-3 text-sm font-semibold text-ink-soft transition-all hover:border-med-500 hover:text-med-600;
+  }
+  .section {
+    @apply px-6 sm:px-8 py-20 md:py-28;
+  }
+  .section-inner {
+    @apply mx-auto max-w-site;
+  }
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-med-600;
+  }
+}
