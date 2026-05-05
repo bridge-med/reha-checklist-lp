@@ -24,11 +24,10 @@ export const config = {
   },
   cta: {
     /**
-     * 配布フォーム URL を後で差し替える場所。
-     * Google フォーム URL に変更すると LP の全ボタンが連動する。
-     * 例: 'https://docs.google.com/forms/d/e/.../viewform'
+     * 配布フォーム URL。Header / Hero / Download セクションの全 CTA がここから配線される。
+     * 差し替える場合は viewform までを必須に、ouid 等の個人パラメタは外す。
      */
-    formUrl: '#download',
+    formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScYUgG_gRt3Y3slGhFD7R2HeJ9pBl1umptI4sk4h1AWOEmgJw/viewform',
     primaryLabel: '無料でチェックリストを受け取る',
     headerLabel: '無料で受け取る',
   },
