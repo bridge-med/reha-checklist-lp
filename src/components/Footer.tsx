@@ -55,6 +55,12 @@ export default function Footer() {
             >
               Mail
             </a>
+            <a
+              href={config.brand.privacy}
+              className="text-ink-soft hover:text-med-600 transition-colors"
+            >
+              プライバシー
+            </a>
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-ink-line text-xs text-ink-soft leading-relaxed max-w-2xl">

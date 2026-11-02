@@ -170,7 +170,7 @@ export default function Preview() {
         >
           <div className="eyebrow mb-4">Preview</div>
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-ink">
-            届くものは、こんなイメージです
+            受け取れるものは、こんなイメージです
           </h2>
           <p className="mt-4 text-sm md:text-base text-ink-soft leading-relaxed">
             PDF と Google スプレッドシート雛形に、それぞれ以下のような形で入っています。記入欄と数式は揃えてあるので、コピーしてその日に動かせます。
@@ -206,7 +206,7 @@ export default function Preview() {
         </motion.div>
 
         <p className="mt-10 text-xs text-ink-mute leading-relaxed max-w-prose">
-          ※ 上記は完成イメージのサンプルです。実物の PDF は A4 ・ Google スプレッドシート雛形は 7 シート構成でお届けします。
+          ※ 上記は完成イメージのサンプルです。実物の PDF は A4 ・ Google スプレッドシート雛形は 7 シート構成です。
         </p>
       </div>
     </section>
