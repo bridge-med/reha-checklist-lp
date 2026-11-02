@@ -43,7 +43,7 @@ export default function DownloadSection() {
             ところから始めてみませんか？
           </h2>
           <p className="mt-5 text-sm sm:text-base md:text-lg leading-relaxed text-med-100">
-            PDF とスプレッドシート雛形を、お手元のメールにお送りします。
+            短いフォームを送信すると、次の画面に PDF とスプレッドシート雛形のリンクが出ます。
             自院に合わせて調整して、まず1週間だけ試してみてください。
           </p>
 
@@ -56,7 +56,7 @@ export default function DownloadSection() {
               <ArrowRight size={16} strokeWidth={2.4} />
             </a>
             <span className="text-xs sm:text-sm text-med-100">
-              所要時間 1 分（メールアドレスのみ）
+              メールアドレスなしで受け取れます
             </span>
           </div>
 
@@ -90,7 +90,9 @@ export default function DownloadSection() {
           <p className="mt-10 text-xs leading-relaxed text-med-200 max-w-xl">
             ※ 本書は、リハ部門の運営状況の把握を補助する資料です。診療報酬上の判断や算定要件の充足については、各クリニックの責任のもと、公式情報および所管行政・関係機関のガイダンスに基づいてご判断ください。
             <br />
-            ※ メールアドレスは配信用途のみで使用します。第三者提供はしません。
+            ※ メールアドレスは任意です。書いた方にだけ、新しい資料ができたときに案内を送ります。回答の扱いは
+            <a href={config.brand.privacy} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white">プライバシーポリシー</a>
+            に書いています。
           </p>
         </motion.div>
       </div>

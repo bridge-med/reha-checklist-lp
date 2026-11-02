@@ -1,8 +1,7 @@
 /**
  * LP 内のリンクとブランド情報の一元管理。
  *
- * - 配布の Google フォーム URL が確定したら、cta.formUrl を差し替える。
- *   現状は #download にスクロールするだけ。
+ * - 配布の Google フォーム URL は cta.formUrl。送信直後の画面(フォームの確認メッセージ)に資料のリンクが出る。メールでは送らない(2026-11-02)。
  * - メールや note 等の URL は brand 配下を変更すれば他箇所にも反映される。
  */
 
@@ -16,6 +15,7 @@ export const config = {
     github: 'https://github.com/bridge-med',
     bridge: 'https://bridge-med.github.io/bridge-lp/',
     mail: 'mailto:h.w19961013@gmail.com',
+    privacy: 'https://bridge-med.jp/legal/reha-checklist-privacy.html',
   },
   product: {
     title: 'リハ部門の数字が見えない時に見るチェックリスト',
